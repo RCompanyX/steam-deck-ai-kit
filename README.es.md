@@ -24,8 +24,6 @@ El kit no incluye juegos, DLL, binarios de wrappers, credenciales, modelos, Prot
 
 Clona el repositorio en una ubicación estable y selecciona una o varias herramientas:
 
-Mientras el repositorio sea privado, tendrás que invitar a cada persona en GitHub para que pueda clonarlo.
-
 ```bash
 git clone https://github.com/RCompanyX/steam-deck-ai-kit.git ~/.local/share/steam-deck-ai-kit
 cd ~/.local/share/steam-deck-ai-kit

@@ -24,8 +24,6 @@ The kit does not include game files, wrapper binaries, API credentials, models, 
 
 Clone to a stable location, then select one or more tools:
 
-While this repository is private, users must be invited to it on GitHub before they can clone it.
-
 ```bash
 git clone https://github.com/RCompanyX/steam-deck-ai-kit.git ~/.local/share/steam-deck-ai-kit
 cd ~/.local/share/steam-deck-ai-kit
