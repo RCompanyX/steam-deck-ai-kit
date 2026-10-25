@@ -15,6 +15,24 @@ For the Steam Deck setup this kit is based on, use **dgVoodoo2 2.79.3 with Valve
 
 Treat this as a tested baseline, not a universal compatibility guarantee. Start with this exact pair when reproducing that setup; do not silently upgrade dgVoodoo2 or substitute a Proton/GE-Proton major version. If a game requires another combination, check current reports, change one component at a time, and keep a rollback path.
 
+### Tested per-game configuration example
+
+For the tested D3D8/RenderWare setup, these were the only changes made to the original `dgVoodoo.conf`:
+
+```ini
+[DirectX]
+Filtering = 16
+Resolution = desktop
+Antialiasing = 2x
+ForceVerticalSync = true
+dgVoodooWatermark = false
+
+[DirectXExt]
+DeferredScreenModeSwitch = true
+```
+
+This is a game-specific override, not a global default. Keep the original configuration file and apply these values only when the game's renderer and symptoms match the tested setup.
+
 Reports of newer dgVoodoo2 releases failing under Wine/Proton are game- and build-dependent. PCGamingWiki's Wine configuration notes recommend trying 2.79.3 when problems occur and currently link a community-maintained Wine/Proton-compatible package. The upstream 2.79.3 release is available from the [official dgVoodoo2 GitHub release](https://github.com/dege-diosg/dgVoodoo2/releases/tag/v2.79.3). Check these sources again before publishing version-specific advice:
 
 - [PCGamingWiki: dgVoodoo 2 — Linux (Wine) configuration](https://www.pcgamingwiki.com/wiki/DgVoodoo_2#Linux_(Wine)_configuration)
